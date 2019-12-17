@@ -1,0 +1,7 @@
+1 Shake
+2 Hug
+3 Pet
+4 Wave
+5 Point
+6 Punch
+7 Throw

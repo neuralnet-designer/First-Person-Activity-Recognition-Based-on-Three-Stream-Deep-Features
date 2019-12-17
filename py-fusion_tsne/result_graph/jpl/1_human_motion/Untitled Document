@@ -1,0 +1,88 @@
+iter 1, Batch Loss= 0.1691, Training Accuracy= 0.976
+Testing Accuracy: 0.9285714
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 5 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_1:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_1:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:04:59.587988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 2, Batch Loss= 0.1656, Training Accuracy= 1.000
+Testing Accuracy: 0.9285714
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 5 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_2:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_2:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:05:13.435298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 3, Batch Loss= 0.1690, Training Accuracy= 1.000
+Testing Accuracy: 0.9285714
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 5 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_3:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_3:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:05:27.943650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 4, Batch Loss= 0.1909, Training Accuracy= 1.000
+Testing Accuracy: 0.9285714
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 5 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_4:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_4:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:05:42.891909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 5, Batch Loss= 0.1722, Training Accuracy= 1.000
+Testing Accuracy: 0.9285714
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 5 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_5:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_5:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:05:58.910349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 6, Batch Loss= 0.1789, Training Accuracy= 0.976
+Testing Accuracy: 0.9285714
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 2 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_6:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_6:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:06:14.215028: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 7, Batch Loss= 0.1951, Training Accuracy= 1.000
+Testing Accuracy: 0.9285714
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 5 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_7:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_7:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:06:29.950657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 8, Batch Loss= 0.1912, Training Accuracy= 0.976
+Testing Accuracy: 0.9047619
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 1 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 5 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_8:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_8:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:06:46.625630: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 9, Batch Loss= 0.1699, Training Accuracy= 1.000
+Testing Accuracy: 0.95238096
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 2 3 3 4
+ 4 4 6 4 4]
+[<tf.Tensor 'unstack_9:0' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:1' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:2' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:3' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:4' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:5' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:6' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:7' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:8' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:9' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:10' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:11' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:12' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:13' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:14' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:15' shape=(42, 2048) dtype=float32>, <tf.Tensor 'unstack_9:16' shape=(42, 2048) dtype=float32>]
+2018-07-24 16:07:02.593691: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1)
+iter 10, Batch Loss= 0.1837, Training Accuracy= 0.976
+Testing Accuracy: 0.95238096
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 3 3 3 4
+ 4 4 4 4 4]
+-------------------------------------
+[2 2 2 2 2 2 6 6 6 6 6 6 1 1 1 1 1 1 0 0 0 0 0 0 5 5 5 5 5 5 3 3 3 2 3 3 4
+ 4 4 6 4 4]

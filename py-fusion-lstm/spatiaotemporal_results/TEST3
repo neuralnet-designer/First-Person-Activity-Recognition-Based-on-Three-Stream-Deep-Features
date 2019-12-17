@@ -1,0 +1,13 @@
+learning_rate = 0.001
+training_steps = 10000 # reference of iccv2017  == epoch
+batch_size = 42
+display_step = 10
+
+# Network Parameters
+num_hidden = 3 # hidden layer num of features
+num_input = 1024*2 # data input
+timesteps = 20 # timesteps
+num_classes = 7 #total classes (0-9 digits)
+
+------------------------------------------------------
+TEST ACCURACY: 0.90 %

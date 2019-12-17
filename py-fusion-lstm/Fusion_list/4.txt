@@ -1,0 +1,129 @@
+** Records of fusion test **
+
+<test4>
+->subevent -> element wise sum & matrix dot & max pooling from 
+-> np.save('features/finetunned_ucf101_vgg_utk_all_fusion_subevent_4.npy',final_feature)
+
+final_feature=np.zeros((video_num,18,512*3), dtype=float)
+spatio_temporal=np.zeros((512*3,7,7), dtype=float)
+human_camera = np.zeros((512 * 3, 7, 7), dtype=float)
+ 
+frame_feature_raw= np.concatenate([features_of_raw[j,:,:,:],features_of_raw[j+1,:,:,:],features_of_raw[j+2,:,:,:]])
+            frame_feature_flow = np.concatenate([features_of_flow[j,:,:,:],features_of_flow[j+1,:,:,:],features_of_flow[j+2,:,:,:]])
+            frame_feature_optical = np.concatenate([features_of_optical[j,:,:,:],features_of_optical[j+1,:,:,:],features_of_optical[j+2,:,:,:]])
+            #print(len(frame_feature_raw)) # 512
+
+
+            for z in range(512*3):
+                channel_raw=frame_feature_raw[z, :, :]
+                channel_flow=frame_feature_flow[z,:,:]
+                channel_optical=frame_feature_optical[z,:,:]
+
+                for x in range(7):
+                    for y in range(7):
+                        spatio_temporal[z,x,y]=channel_raw[x,y]+channel_flow[x,y]
+
+
+                human_camera[z,:,:] = np.dot(spatio_temporal[z,:,:],channel_optical)
+                final_feature[i, j, z] = np.max(human_camera)
+
+= very bad.... (10%)
+
+
+<test5>
+-> element wise sum
+-> np.save('features/finetunned_ucf101_vgg_utk_all_fusion_subevent_5.npy',final_feature)
+
+final_feature=np.zeros((video_num,18,512*3), dtype=float)
+spatio_temporal=np.zeros((512*3,7,7), dtype=float)
+human_camera = np.zeros((512 * 3, 7, 7), dtype=float)
+ 
+frame_feature_raw= np.concatenate([features_of_raw[j,:,:,:],features_of_raw[j+1,:,:,:],features_of_raw[j+2,:,:,:]])
+            frame_feature_flow = np.concatenate([features_of_flow[j,:,:,:],features_of_flow[j+1,:,:,:],features_of_flow[j+2,:,:,:]])
+            frame_feature_optical = np.concatenate([features_of_optical[j,:,:,:],features_of_optical[j+1,:,:,:],features_of_optical[j+2,:,:,:]])
+            #print(len(frame_feature_raw)) # 512
+
+
+            for z in range(512*3):
+                channel_raw=frame_feature_raw[z, :, :]
+                channel_flow=frame_feature_flow[z,:,:]
+                channel_optical=frame_feature_optical[z,:,:]
+
+                for x in range(7):
+                    for y in range(7):
+                        spatio_temporal[z,x,y]=channel_raw[x,y]+channel_flow[x,y]+channel_optical[x,y]
+
+                final_feature[i, j, z] = np.max(human_camera)
+
+= very bad.... (10%)
+
+
+<test6>
+->subevent -> element wise sum & matrix outer product & max pooling from 
+-> np.save('features/finetunned_ucf101_vgg_utk_all_fusion_subevent_6.npy',final_feature)
+
+final_feature=np.zeros((video_num,18,512*3), dtype=float)
+spatio_temporal=np.zeros((512*3,7,7), dtype=float)
+human_camera = np.zeros((512 * 3, 49, 49), dtype=float)
+ 
+frame_feature_raw= np.concatenate([features_of_raw[j,:,:,:],features_of_raw[j+1,:,:,:],features_of_raw[j+2,:,:,:]])
+            frame_feature_flow = np.concatenate([features_of_flow[j,:,:,:],features_of_flow[j+1,:,:,:],features_of_flow[j+2,:,:,:]])
+            frame_feature_optical = np.concatenate([features_of_optical[j,:,:,:],features_of_optical[j+1,:,:,:],features_of_optical[j+2,:,:,:]])
+            #print(len(frame_feature_raw)) # 512
+
+            for z in range(512*3):
+                channel_raw=frame_feature_raw[z, :, :]
+                channel_flow=frame_feature_flow[z,:,:]
+                channel_optical=frame_feature_optical[z,:,:]
+
+                for x in range(7):
+                    for y in range(7):
+                        spatio_temporal[z,x,y]=channel_raw[x,y]+channel_flow[x,y]
+                human_camera[z,:,:] = np.outer(spatio_temporal[z,:,:],channel_optical)
+
+                final_feature[i, j, z] = np.max(human_camera)
+
+= too much time to calculate outer product & very bad...(10%)
+
+
+
+<test7>
+ video_num=179
+ final_feature=np.zeros((video_num,18,512*3), dtype=float)
+human_camera=np.zeros((20,512), dtype=float)
+
+  for i in range(video_num):
+        print('video: '+str(i+1))
+
+        features_of_flow = np.load('../dataset/utk/featuremaps/utk_raw_featuremap/' + str(i + 1) + '.npy')
+        features_of_raw = np.load('../dataset/utk/featuremaps/utk_flow_featuremap/' + str(i + 1) + '.npy')
+        features_of_optical = np.load('../dataset/utk/featuremaps/utk_nohuman_flow_featuremap/' + str(i + 1) + '.npy')
+
+
+        # Channel-wise Human(appearance-motion)-camera fusion features
+        for j in range(20):
+            frame_feature_raw= features_of_raw[j,:,:,:]
+            frame_feature_flow = features_of_flow[j,:,:,:]
+            frame_feature_optical = features_of_optical[j,:,:,:]
+
+            # channel_wise sum of appearance and motion activation maps
+            for z in range(512):
+                channel_raw=frame_feature_raw[z, :, :]
+                channel_flow=frame_feature_flow[z,:,:]
+                channel_optical=frame_feature_optical[z,:,:]
+                fusion=np.sum(channel_raw+channel_flow+channel_optical)
+                human_camera[j,z] = np.sum(fusion) # 512 dimension
+
+
+        #SubAction-wise fusion features
+        for j in range(18):
+            Y=np.concatenate([human_camera[j,:],human_camera[j+1,:],human_camera[j+2,:]]) # 512*3 dimension
+            sub_event=np.fft.fft(Y)/len(Y)
+            final_feature[i,j,:]=sub_event
+
+
+    np.save('features/finetunned_ucf101_vgg_utk_all_fusion_subevent_7.npy',final_feature)
+
+=
+
+
